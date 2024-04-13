@@ -50,3 +50,41 @@
 
 }
 
+.button {
+  border-radius: 15px;
+}
+
+
+.search {
+  width: 500px;
+  height: 100px;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.App .resultados {
+  text-align: center;
+  border-radius: 20px;  
+  height: 900px;
+  width: 450px;
+  position: fixed;
+  left: 200px;
+  top: 250px;
+  background-color: #61dafb;
+  opacity: 0.5;
+}
+
+.App .playlist {
+  text-align: center;
+  border-radius: 20px;  
+  height: 900px;
+  width: 450px;
+  position: fixed;
+  right: 200px;
+  top: 250px;
+  background-color: #61dafb;
+  opacity: 0.5;
+}
+
