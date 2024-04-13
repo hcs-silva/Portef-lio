@@ -70,7 +70,7 @@
   height: 900px;
   width: 450px;
   position: fixed;
-  left: 200px;
+  left: 25%;
   top: 250px;
   background-color: #61dafb;
   opacity: 0.5;
@@ -82,7 +82,7 @@
   height: 900px;
   width: 450px;
   position: fixed;
-  right: 200px;
+  right: 25%;
   top: 250px;
   background-color: #61dafb;
   opacity: 0.5;
