@@ -39,14 +39,11 @@ function App() {
     const category =
       categories[Math.floor(Math.random() * Object.keys(categories).length)];
 
-    console.log(category);
 
     // pick a random word
 
     const word =
-      words[category][Math.floor(Math.random() * words[category].length)];
-
-    console.log(word);
+      words[category][Math.floor(Math.random() * words[category].length)]; 
 
     return { word, category };
   }, [words]);
@@ -64,8 +61,6 @@ function App() {
 
     wordLetters = wordLetters.map((l) => l.toLowerCase());
 
-    console.log(word, category);
-    console.log(wordLetters);
 
     // fill states
     setPickedWord(word);
@@ -133,7 +128,6 @@ function App() {
       startGame();
     }
 
-    console.log(uniqueLetters);
   }, [guessedLetters, letters, startGame]);
 
   //restarts the game
@@ -143,6 +137,10 @@ function App() {
     setGuesses(guessesQty);
     setGameStage(stages[0].name);
   };
+
+  useEffect(() => {
+    setGameStage(stages[0].name);
+  }, []);
 
   return (
     <div className="App">
