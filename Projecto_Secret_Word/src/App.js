@@ -142,6 +142,10 @@ function App() {
     setGameStage(stages[0].name);
   }, []);
 
+  useEffect(() => {
+    setScore(0)
+  }, []);
+
   return (
     <div className="App">
       {gameStage === "start" && <StartScreen startGame={startGame} />}
